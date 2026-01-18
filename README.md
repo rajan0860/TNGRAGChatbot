@@ -72,3 +72,39 @@ Possible future improvements include:
 
 Purpose
 This project is a learning and exploration experiment designed to show how combining multiple tools—script search, web lookup, and basic reasoning—can make complex fictional worlds easier to explore in a natural, conversational way.
+
+## Screenshots
+
+### Chatbot Query Output
+![Chatbot Outcome](images/outcome.png)
+
+### Final Query Result
+![Final Outcome](images/final_outcome.png)
+
+### Test Results
+![Test Results](images/test_results.png)
+
+## Running Tests
+
+This project includes a comprehensive test suite using pytest. To run the tests:
+
+```bash
+# Install pytest (if not already installed)
+pip install pytest
+
+# Run all tests
+python -m pytest tests/ -v
+
+# Run specific test file
+python -m pytest tests/test_processor.py -v
+
+# Run with short output
+python -m pytest tests/
+```
+
+The test suite covers:
+- **Processor module** - Script parsing and dialogue extraction
+- **Vector store** - FAISS index operations
+- **Chatbot** - Agent construction and query handling
+- **Config** - Configuration validation
+- **Integration** - End-to-end workflow tests
